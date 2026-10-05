@@ -20,6 +20,8 @@ A [basic API](https://pkg.go.dev/github.com/dolmen-go/kittyimg)
 [`Fprintln`](https://pkg.go.dev/github.com/dolmen-go/kittyimg#Fprintln),
 [`Transcode`](https://pkg.go.dev/github.com/dolmen-go/kittyimg#Transcode)) allows to display an image (loaded with stdlib's [image](https://pkg.go.dev/image) package) at the cursor position.
 
+[`FprintPlaceholders`](https://pkg.go.dev/github.com/dolmen-go/kittyimg#FprintPlaceholders) writes [Unicode placeholders](https://sw.kovidgoyal.net/kitty/graphics-protocol/#unicode-placeholders) for an image already sent with a virtual placement, so the image scrolls with the text, even in tmux or `less -r`.
+
 ```console
 go get github.com/dolmen-go/kittyimg@latest
 ```
